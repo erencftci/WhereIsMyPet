@@ -1,0 +1,50 @@
+.help-page {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.help-page .MuiPaper-root {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 15px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.help-page .MuiTextField-root {
+  margin-bottom: 20px;
+}
+
+.help-page .MuiInputLabel-root {
+  color: #8B4513;
+}
+
+.help-page .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #8B4513;
+}
+
+.help-page .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #8B4513;
+}
+
+.help-page .MuiButton-root {
+  text-transform: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.help-page .MuiAlert-root {
+  font-size: 1rem;
+}
+
+@media (max-width: 600px) {
+  .help-page .MuiTypography-h4 {
+    font-size: 1.5rem;
+  }
+  
+  .help-page .MuiTypography-body1 {
+    font-size: 0.9rem;
+  }
+  
+  .help-page .MuiButton-root {
+    width: 100%;
+  }
+} 

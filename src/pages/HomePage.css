@@ -1,0 +1,78 @@
+.homepage-container {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+.hero-title {
+  animation: fadeInUp 1s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8B4513;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #654321;
+}
+
+.option-button {
+  background: rgba(139, 69, 19, 0,20) !important;
+  color: #F5DEB3 !important;
+  font-size: 1.2rem !important;
+  padding: 20px 40px !important;
+  border-radius: 50% !important;
+  transition: all 0.3s ease !important;
+  text-transform: none !important;
+  font-weight: 600 !important;
+  position: relative !important;
+  overflow: hidden !important;
+  margin: 0 20px !important;
+  width: 200px !important;
+  height: 200px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+.option-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(245, 222, 179, 0.1);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.option-button:hover::before {
+  transform: translateX(0);
+} 

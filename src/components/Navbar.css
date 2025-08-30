@@ -1,0 +1,118 @@
+.navbar {
+  background: rgba(139, 69, 19, 0.35) !important;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(245, 222, 179, 0.1);
+  height: 100px;
+  transition: all 0.3s ease;
+}
+
+.logo-link {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo:hover {
+  transform: scale(1.05);
+}
+
+.nav-button {
+  color: #F5DEB3 !important;
+  font-size: 1.1rem !important;
+  padding: 10px 20px !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+  text-transform: none !important;
+  font-weight: 500 !important;
+  position: relative !important;
+  overflow: hidden !important;
+  margin: 0 5px !important;
+  background: rgba(139, 69, 19, 0.35) !important;
+}
+
+.nav-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(245, 222, 179, 0.1);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+.nav-button:hover::before {
+  transform: translateX(0);
+}
+
+.login-button {
+  font-size: 1.3rem !important;
+  font-weight: 600 !important;
+  padding: 12px 24px !important;
+  margin-right: 20px !important;
+  background: rgba(139, 69, 19, 0.35) !important;
+}
+
+.menu-button {
+  color: #F5DEB3 !important;
+  padding: 15px !important;
+  font-size: 2.5rem !important;
+  transition: all 0.3s ease !important;
+}
+
+.menu-button:hover {
+  transform: scale(1.1);
+  background-color: rgba(245, 222, 179, 0.1) !important;
+}
+
+.drawer .MuiDrawer-paper {
+  width: 350px;
+  background: rgba(139, 69, 19, 0.95);
+  color: #F5DEB3;
+  border-left: 1px solid rgba(245, 222, 179, 0.1);
+}
+
+.drawer-item {
+  color: #F5DEB3 !important;
+  transition: all 0.3s ease !important;
+  padding: 16px 24px !important;
+}
+
+.drawer-item:hover {
+  background-color: rgba(245, 222, 179, 0.1) !important;
+  transform: translateX(5px);
+}
+
+.drawer-item.logout-item:hover {
+  transform: none;
+}
+
+@media (max-width: 600px) {
+  .navbar-logo {
+    height: 60px;
+  }
+
+  .nav-button {
+    padding: 8px 16px !important;
+    font-size: 1rem !important;
+  }
+
+  .login-button {
+    font-size: 1.1rem !important;
+    padding: 10px 20px !important;
+  }
+
+  .menu-button {
+    padding: 12px !important;
+    font-size: 2rem !important;
+  }
+} 

@@ -1,0 +1,41 @@
+.about-page {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.about-page .MuiPaper-root {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 15px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.about-page .MuiTypography-h4 {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.about-page .MuiTypography-h4::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background-color: #8B4513;
+}
+
+.about-page .MuiTypography-body1 {
+  line-height: 1.8;
+  color: #333;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+  .about-page .MuiTypography-h4 {
+    font-size: 1.5rem;
+  }
+  
+  .about-page .MuiTypography-body1 {
+    font-size: 1rem;
+  }
+} 

@@ -1,0 +1,48 @@
+.faq-page {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+.faq-page .MuiPaper-root {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-radius: 15px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.faq-page .MuiAccordion-root {
+  border: 1px solid rgba(139, 69, 19, 0.1);
+  transition: all 0.3s ease;
+}
+
+.faq-page .MuiAccordion-root:hover {
+  box-shadow: 0 2px 8px rgba(139, 69, 19, 0.1);
+}
+
+.faq-page .MuiAccordionSummary-root {
+  padding: 16px;
+}
+
+.faq-page .MuiAccordionDetails-root {
+  padding: 16px 24px;
+  background-color: #fff;
+  border-top: 1px solid rgba(139, 69, 19, 0.1);
+}
+
+.faq-page .MuiTypography-h6 {
+  font-weight: 600;
+}
+
+.faq-page .MuiTypography-body1 {
+  line-height: 1.8;
+  color: #333;
+}
+
+@media (max-width: 600px) {
+  .faq-page .MuiTypography-h6 {
+    font-size: 1rem;
+  }
+  
+  .faq-page .MuiTypography-body1 {
+    font-size: 0.9rem;
+  }
+} 

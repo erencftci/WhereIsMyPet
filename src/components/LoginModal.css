@@ -1,0 +1,118 @@
+.auth-modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.modal-paper {
+  background: rgba(255, 255, 255, 0.95) !important;
+  backdrop-filter: blur(10px);
+  border-radius: 15px !important;
+  overflow: hidden;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(139, 69, 19, 0.1);
+}
+
+.modal-logo {
+  height: 80px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.modal-logo:hover {
+  transform: scale(1.05);
+}
+
+.auth-tabs {
+  margin-bottom: 20px;
+}
+
+.auth-tabs .MuiTab-root {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #8B4513;
+  transition: all 0.3s ease;
+}
+
+.auth-tabs .MuiTab-root.Mui-selected {
+  color: #8B4513;
+  font-weight: 600;
+}
+
+.auth-tabs .MuiTabs-indicator {
+  background-color: #8B4513;
+  height: 3px;
+}
+
+.auth-input .MuiOutlinedInput-root {
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.auth-input .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: #8B4513;
+}
+
+.auth-input .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #8B4513;
+  border-width: 2px;
+}
+
+.auth-button {
+  background-color: #8B4513 !important;
+  color: #F5DEB3 !important;
+  padding: 12px !important;
+  font-size: 1.1rem !important;
+  font-weight: 500 !important;
+  border-radius: 8px !important;
+  margin-top: 20px !important;
+  transition: all 0.3s ease !important;
+  text-transform: none !important;
+}
+
+.auth-button:hover {
+  background-color: #654321 !important;
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .modal-container {
+    margin: 10px;
+  }
+
+  .modal-logo {
+    height: 60px;
+  }
+
+  .auth-tabs .MuiTab-root {
+    font-size: 1rem;
+  }
+
+  .auth-button {
+    padding: 10px !important;
+    font-size: 1rem !important;
+  }
+} 
