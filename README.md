@@ -40,8 +40,6 @@ utils/, types/ # Yardımcı fonksiyonlar ve TypeScript tipleri
 firebase.ts # Firebase konfigürasyon ve servis dışa aktarımları
 App.tsx, index.tsx # Uygulama giriş noktaları
 
-yaml
-Kodu kopyala
 
 ---
 
